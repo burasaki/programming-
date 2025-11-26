@@ -4,15 +4,15 @@ def merge_sort2(m):
     """Sort list, using two part merge sort"""
     if len(m) <= 1:
         return m
-# Determine the pivot point
+ # Determine the pivot point
     middle = len(m) // 2
-# Split the list at the pivot
-    left = m[:middle]
+ # Split the list at the pivot
     right = m[middle:]
-# Sort recursively
+    left = m[:middle]
+ # Sort recursively
     right = merge_sort2(right)
     left = merge_sort2(left)
-# Merge and return
+ # Merge and return
     return list(merge(right, left))
 
 def merge_sort4(m):
@@ -27,11 +27,11 @@ def merge_sort4(m):
     first = m[:leftMiddle]
     second = m[leftMiddle:middle]
     third = m[middle:rightMiddle]
-    last = m[rightMiddle:]
- # Sort recursively
+    fourth = m[rightMiddle:]
+    # Sort recursively
     first = merge_sort4(first)
     second = merge_sort4(second)
     third = merge_sort4(third)
-    last = merge_sort4(last)
-# Merge and return
-    return list(merge(first, second, third, last))
+    fourth = merge_sort4(fourth)
+ # Merge and return
+    return list(merge(first,second, third, fourth))
