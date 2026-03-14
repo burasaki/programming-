@@ -1,4 +1,4 @@
-#Make CMake
+# Make CMake
 
 ## [Makefile](Makefile) реализованы команды run, clear, all, для запуска ввести `make run`
 ## [CMakeLists.txt](CMakeLists.txt) для сборки ввести
