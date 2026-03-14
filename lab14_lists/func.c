@@ -45,7 +45,6 @@ node_t* generate_arr_flights(int n, int k){
             k--;
         } else{
             number++;
-            printf("1\n");
 
             head = append_back(head);
             k--;
