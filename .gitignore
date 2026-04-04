@@ -5,3 +5,5 @@
 *.a
 *.so
 build/
+database*
+*compressed*
